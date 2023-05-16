@@ -1,4 +1,6 @@
-import Lines.*;
+//import Lines.*;
+
+import Lines.LineFrame;
 
 public class PlayGame{
 	

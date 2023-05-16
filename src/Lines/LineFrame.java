@@ -21,31 +21,31 @@ public class LineFrame extends JFrame {
 	public LineFrame() {
 
 		// Load 7 big balls
-		icon[1] = new ImageIcon("Images/big1.png");
-		icon[2] = new ImageIcon("Images/big2.png");
-		icon[3] = new ImageIcon("Images/big3.png");
-		icon[4] = new ImageIcon("Images/big4.png");
-		icon[5] = new ImageIcon("Images/big5.png");
-		icon[6] = new ImageIcon("Images/big6.png");
-		icon[7] = new ImageIcon("Images/big7.png");
+		icon[1] = new ImageIcon("src/Images/big1.png");
+		icon[2] = new ImageIcon("src/Images/big2.png");
+		icon[3] = new ImageIcon("src/Images/big3.png");
+		icon[4] = new ImageIcon("src/Images/big4.png");
+		icon[5] = new ImageIcon("src/Images/big5.png");
+		icon[6] = new ImageIcon("src/Images/big6.png");
+		icon[7] = new ImageIcon("src/Images/big7.png");
 
 		// Load 7 small balls
-		icon[8] = new ImageIcon("Images/small1.png");
-		icon[9] = new ImageIcon("Images/small2.png");
-		icon[10] = new ImageIcon("Images/small3.png");
-		icon[11] = new ImageIcon("Images/small4.png");
-		icon[12] = new ImageIcon("Images/small5.png");
-		icon[13] = new ImageIcon("Images/small6.png");
-		icon[14] = new ImageIcon("Images/small7.png");
+		icon[8] = new ImageIcon("src/Images/small1.png");
+		icon[9] = new ImageIcon("src/Images/small2.png");
+		icon[10] = new ImageIcon("src/Images/small3.png");
+		icon[11] = new ImageIcon("src/Images/small4.png");
+		icon[12] = new ImageIcon("src/Images/small5.png");
+		icon[13] = new ImageIcon("src/Images/small6.png");
+		icon[14] = new ImageIcon("src/Images/small7.png");
 
 		// Load 7 moving balls
-		icon[15] = new ImageIcon("Images/d1.gif");
-		icon[16] = new ImageIcon("Images/d2.gif");
-		icon[17] = new ImageIcon("Images/d3.gif");
-		icon[18] = new ImageIcon("Images/d4.gif");
-		icon[19] = new ImageIcon("Images/d5.gif");
-		icon[20] = new ImageIcon("Images/d6.gif");
-		icon[21] = new ImageIcon("Images/d7.gif");
+		icon[15] = new ImageIcon("src/Images/d1.gif");
+		icon[16] = new ImageIcon("src/Images/d2.gif");
+		icon[17] = new ImageIcon("src/Images/d3.gif");
+		icon[18] = new ImageIcon("src/Images/d4.gif");
+		icon[19] = new ImageIcon("src/Images/d5.gif");
+		icon[20] = new ImageIcon("src/Images/d6.gif");
+		icon[21] = new ImageIcon("src/Images/d7.gif");
 
 		for (int i = 0; i < 9; i++)
 			for (int j = 0; j < 9; j++) {
@@ -133,7 +133,7 @@ public class LineFrame extends JFrame {
 			menu.add(nextball[i]);
 		}
 
-		Icon scoreIcon = new ImageIcon("Images/score.png");
+		Icon scoreIcon = new ImageIcon("src/Images/score.png");
 		score.setIcon(scoreIcon);
 		menu.add(score);
 
@@ -278,7 +278,7 @@ public class LineFrame extends JFrame {
 				GameOver.setLayout(new GridLayout(2, 1));
 				GameOver.setSize(290, 150);
 				GameOver.setResizable(true);
-				GameOver.show();
+				GameOver.setVisible(true);
 				GameOver.addWindowListener(new WindowAdapter() {// Start new game upon closing windows
 					public void windowClosing(WindowEvent e) {
 						startGame();
